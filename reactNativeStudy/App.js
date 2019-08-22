@@ -39,6 +39,9 @@ import FlatListStudy from './components-study/FlatListStudy';
 import ActivityIndicatorStudy from './components-study/ActivityIndicatorStudy';
 import TouchableStudy from './components-study/TouchableStudy';
 import StatusBarStudy from './components-study/StatusBarStudy';
+import Style01 from './style_study/Style01';
+
+//RN布局学习
 
 
 export default class App extends React.Component {
@@ -59,7 +62,9 @@ export default class App extends React.Component {
         {/*<FlatListStudy />*/}
         {/*<ActivityIndicatorStudy />*/}
         {/*<TouchableStudy />*/}
-        <StatusBarStudy />
+        {/*<StatusBarStudy />*/}
+        <Style01 />
+
       </View>
     );
   }
