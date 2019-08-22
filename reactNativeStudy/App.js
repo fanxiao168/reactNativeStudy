@@ -34,6 +34,11 @@ import ImageStudy2 from './components-study/ImageStudy2';
 import TextInputStudy from './components-study/TextInputStudy';
 import AlertStudy from './components-study/AlertStudy';
 import DimensionsStudy from './components-study/DimensionsStudy';
+import ScrollViewStudy from './components-study/ScrollViewStudy';
+import FlatListStudy from './components-study/FlatListStudy';
+import ActivityIndicatorStudy from './components-study/ActivityIndicatorStudy';
+import TouchableStudy from './components-study/TouchableStudy';
+import StatusBarStudy from './components-study/StatusBarStudy';
 
 
 export default class App extends React.Component {
@@ -49,8 +54,12 @@ export default class App extends React.Component {
         {/*<ImageStudy2 />*/}
         {/*<TextInputStudy />*/}
         {/*<AlertStudy />*/}
-        <DimensionsStudy />
-
+        {/*<DimensionsStudy />*/}
+        {/*<ScrollViewStudy />*/}
+        {/*<FlatListStudy />*/}
+        {/*<ActivityIndicatorStudy />*/}
+        {/*<TouchableStudy />*/}
+        <StatusBarStudy />
       </View>
     );
   }

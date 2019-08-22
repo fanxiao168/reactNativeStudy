@@ -1,28 +1,28 @@
 import React, {Component} from 'react';
-import {View, StyleSheet, Text, Dimensions} from 'react-native';
+import {View, StyleSheet, Text, ScrollView} from 'react-native';
 
-export default class DimensionsStudy extends Component {
+export default class ScrollViewStudy extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      list: ['red', 'yellow', 'pink', 'orange', 'blue', 'skyblue'],
+    };
+  }
   render() {
     return (
-      <View>
-        <View style={styles.view1} />
-        <View style={styles.view2} />
-      </View>
+      <ScrollView>
+        {/* 如果内容超出屏幕，默认情况下是不能拖动查阅的，包裹ScrollView就可以解决 */}
+        {/* ScrollView的特点是，无论列表有多少，都是一起渲染 */}
+        {this.state.list.map(color => (
+          <View
+            key={color}
+            style={{backgroundColor: color, width: 300, height: 180}}>
+            <Text>{color}</Text>
+          </View>
+        ))}
+      </ScrollView>
     );
   }
 }
 
-//Dimensions可以动态获取屏幕的宽高，用这个宽高我们可以根据需求自己计算
-//使用它的时候，主要是因为我们不能确定父盒子的宽高与屏幕的关系
-const styles = StyleSheet.create({
-  view1: {
-    width: Dimensions.get('window').width / 2,
-    height: Dimensions.get('window').height / 2,
-    backgroundColor: 'yellow',
-  },
-  view2: {
-    width: (Dimensions.get('window').width / 3) * 2,
-    height: Dimensions.get('window').height / 2,
-    backgroundColor: 'orange',
-  },
-});
+const styles = StyleSheet.create({});
