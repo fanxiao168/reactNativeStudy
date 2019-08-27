@@ -39,10 +39,15 @@ import FlatListStudy from './components-study/FlatListStudy';
 import ActivityIndicatorStudy from './components-study/ActivityIndicatorStudy';
 import TouchableStudy from './components-study/TouchableStudy';
 import StatusBarStudy from './components-study/StatusBarStudy';
-import Style01 from './style_study/Style01';
 
 //RN布局学习
-
+import Style01 from './style_study/Style01';
+import Style02 from './style_study/Style02';
+import Style03 from './style_study/Style03';
+import Style04 from './style_study/Style04';
+import Style05 from './style_study/Style05';
+import Style06 from './style_study/Style06';
+import Style07 from './style_study/Style07';
 
 export default class App extends React.Component {
   render() {
@@ -63,8 +68,13 @@ export default class App extends React.Component {
         {/*<ActivityIndicatorStudy />*/}
         {/*<TouchableStudy />*/}
         {/*<StatusBarStudy />*/}
-        <Style01 />
-
+        {/*<Style01 />*/}
+        {/*<Style02 />*/}
+        {/*<Style03 />*/}
+        {/*<Style04 />*/}
+        {/*<Style05 />*/}
+        {/*<Style06 />*/}
+        <Style07 />
       </View>
     );
   }
