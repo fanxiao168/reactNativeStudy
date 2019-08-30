@@ -36,9 +36,11 @@ import AlertStudy from './components-study/AlertStudy';
 import DimensionsStudy from './components-study/DimensionsStudy';
 import ScrollViewStudy from './components-study/ScrollViewStudy';
 import FlatListStudy from './components-study/FlatListStudy';
+import SectionListStudy from './components-study/SectionListStudy';
 import ActivityIndicatorStudy from './components-study/ActivityIndicatorStudy';
 import TouchableStudy from './components-study/TouchableStudy';
 import StatusBarStudy from './components-study/StatusBarStudy';
+import FetchStudy from './components-study/FetchStudy';
 
 //RN布局学习
 import Style01 from './style_study/Style01';
@@ -48,6 +50,12 @@ import Style04 from './style_study/Style04';
 import Style05 from './style_study/Style05';
 import Style06 from './style_study/Style06';
 import Style07 from './style_study/Style07';
+
+//advancedGuide
+import FlatformStudy from './advancedGuide-study/FlatformStudy';
+import AnimatedStudy from './advancedGuide-study/AnimatedStudy';
+import TimerStudy from './advancedGuide-study/TimerStudy';
+
 
 export default class App extends React.Component {
   render() {
@@ -65,16 +73,35 @@ export default class App extends React.Component {
         {/*<DimensionsStudy />*/}
         {/*<ScrollViewStudy />*/}
         {/*<FlatListStudy />*/}
+        {/*<SectionListStudy />*/}
         {/*<ActivityIndicatorStudy />*/}
         {/*<TouchableStudy />*/}
         {/*<StatusBarStudy />*/}
+        {/*<FetchStudy />*/}
+
+        {/*<FlatformStudy />*/}
+
+        {/*<AnimatedStudy*/}
+        {/*  style={{*/}
+        {/*    width: 300,*/}
+        {/*    height: 100,*/}
+        {/*    backgroundColor: 'powderblue',*/}
+        {/*    justifyContent: 'center',*/}
+        {/*  }}>*/}
+        {/*  <Text style={{fontSize: 28, textAlign: 'center', margin: 10}}>*/}
+        {/*    Fading in*/}
+        {/*  </Text>*/}
+        {/*</AnimatedStudy>*/}
+
+        <TimerStudy />
+
         {/*<Style01 />*/}
         {/*<Style02 />*/}
         {/*<Style03 />*/}
         {/*<Style04 />*/}
         {/*<Style05 />*/}
         {/*<Style06 />*/}
-        <Style07 />
+        {/*<Style07 />*/}
       </View>
     );
   }
